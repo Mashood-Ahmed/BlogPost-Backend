@@ -1,0 +1,35 @@
+# .NET Core
+*.dll
+*.exe
+*.pdb
+*.user
+*.vscode
+*.vs
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio files
+*.suo
+*.cache
+*.log
+*.userprefs
+*.sln.docstates
+
+# Rider files
+.idea/
+
+# Resharper files
+_ReSharper*/
+
+# NuGet packages
+*.nupkg
+**/packages/
