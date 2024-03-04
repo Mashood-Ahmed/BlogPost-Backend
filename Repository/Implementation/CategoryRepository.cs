@@ -22,6 +22,12 @@ namespace Portfolio.API.Repository.Implementation
             return category == null ? throw new KeyNotFoundException("Category Not Found") : category;
         }
 
+        public async Task<ICollection<Category>> MapCategoriesById(List<Guid> CategoryIds)
+        {
+            var categories = await dbContext.Categories.Where(c => CategoryIds.Contains(c.Id)).ToListAsync();
+            return categories;
+        }
+
         public async Task<Category> CreateAsync(Category category)
         {
             await dbContext.Categories.AddAsync(category);

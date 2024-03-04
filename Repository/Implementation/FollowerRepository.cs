@@ -31,7 +31,6 @@ namespace Portfolio.API.Repository.Implementation
         //Get all follow requests
         public async Task<IEnumerable<Follower>> GetUserNonFollowerAsync(Guid Id)
         {
-            System.Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$ " + Id);
             var followers = await _dbcontext.Followers.Where(f => f.Following_Id == Id && f.Status == false).ToListAsync();
             return followers;
         }

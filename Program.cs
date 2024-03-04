@@ -34,6 +34,7 @@ services.AddScoped<ICateogryRepository, CategoryRepository>();
 services.AddScoped<IUserRepository, UserRepository>();
 services.AddScoped<IUserProfileRepository, UserProfileRepository>();
 services.AddScoped<IFollowerRepository, FollowerRepository>();
+services.AddScoped<IPostRepository, PostRepository>();
 
 // configure automapper with all automapper profiles from this assembly
 services.AddAutoMapper(typeof(Program));
