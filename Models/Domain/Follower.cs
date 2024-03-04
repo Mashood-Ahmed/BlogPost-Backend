@@ -12,7 +12,6 @@ namespace Portfolio.API.Models.Domain
 
         public Guid Following_Id { get; set; }
 
-        [JsonIgnore]
         public User _Follower { get; set; } = default!;
 
         public User _Following { get; set; } = default!;

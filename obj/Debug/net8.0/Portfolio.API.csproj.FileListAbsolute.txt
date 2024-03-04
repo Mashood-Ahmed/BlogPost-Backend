@@ -273,3 +273,4 @@ D:\.NET\BlogPosts\Portfolio.API\obj\Debug\net8.0\ref\Portfolio.API.dll
 D:\.NET\BlogPosts\Portfolio.API\bin\Debug\net8.0\AutoMapper.dll
 D:\.NET\BlogPosts\Portfolio.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\.NET\BlogPosts\Portfolio.API\bin\Debug\net8.0\launchSettings.json
+D:\.NET\BlogPosts\Portfolio.API\obj\Debug\net8.0\Portfolio.API.sourcelink.json

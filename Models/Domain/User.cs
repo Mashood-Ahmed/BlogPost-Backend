@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Portfolio.API.Models.Domain.Post;
+using System.Collections;
 using System.Text.Json.Serialization;
 
 namespace Portfolio.API.Models.Domain
@@ -16,12 +17,29 @@ namespace Portfolio.API.Models.Domain
         [JsonIgnore]
         public string Password { get; set; }
 
-        //Navigation Properties
-        public UserProfile Profile { get; set; }
 
-        public ICollection<Follower> Followers { get; set; }
+        public virtual UserProfile Profile { get; set; }
 
-        public ICollection<Follower> Following { get; set; }
+
+        public virtual ICollection<Follower> Followers { get; set; }
+
+
+        public virtual ICollection<Follower> Following { get; set; }
+
+
+        public virtual ICollection<_Post> Posts { get; set; }
+
+
+        public virtual ICollection<Contribution> Contributions { get; set; }
+
+
+        public virtual ICollection<Contributor> PostContributed { get; set; }
+
+
+        public virtual ICollection<PostLike> Likes { get; set; }
+
+
+        public virtual ICollection<PostComment> Comments { get; set; }
 
 
     }

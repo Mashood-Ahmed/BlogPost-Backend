@@ -1,4 +1,7 @@
-﻿namespace Portfolio.API.Models.Domain
+﻿using Portfolio.API.Models.Domain.Post;
+using System.Text.Json.Serialization;
+
+namespace Portfolio.API.Models.Domain
 {
     public class Category
     {
@@ -8,6 +11,7 @@
 
         public string UrlHandle { get; set; }
 
-        //public ICollection<Post> Posts { get; set; }
+        [JsonIgnore]
+        public ICollection<_Post> Posts { get; set; }
     }
 }
