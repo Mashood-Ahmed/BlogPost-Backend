@@ -25,23 +25,19 @@ namespace Portfolio.API.Models.Domain.Post
 
         public User User { get; set; }
 
+        public Boolean Status { get; set; }
 
-        public virtual ICollection<Category> Categories { get; set; }
+        public ICollection<Category> Categories { get; set; }
 
+        public ICollection<Inspiration> Inspirations { get; set; }
 
-        public virtual ICollection<Inspiration> Inspirations { get; set; }
+        public ICollection<Contributor> Contributors { get; set; }
 
+        public ICollection<Contribution> Contributions { get; set; }
 
-        public virtual ICollection<Contributor> Contributors { get; set; }
+        public ICollection<PostLike> Likes { get; set; }
 
-
-        public virtual ICollection<Contribution> Contributions { get; set; }
-
-
-        public virtual ICollection<PostLike> Likes { get; set; }
-
-
-        public virtual ICollection<PostComment> Comments { get; set; }
+        public ICollection<PostComment> Comments { get; set; }
 
     }
 }

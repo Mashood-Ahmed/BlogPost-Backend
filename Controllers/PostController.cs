@@ -107,6 +107,7 @@ namespace Portfolio.API.Controllers
                 CreatedBy = current.Id,
                 CreatedOn = DateTime.Now,
                 User = current,
+                Status = true,
                 Categories = categories
             };
 

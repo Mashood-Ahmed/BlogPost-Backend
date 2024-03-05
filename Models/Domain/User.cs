@@ -17,28 +17,28 @@ namespace Portfolio.API.Models.Domain
         [JsonIgnore]
         public string Password { get; set; }
 
-
+        [JsonIgnore]
         public virtual UserProfile Profile { get; set; }
 
-
+        [JsonIgnore]
         public virtual ICollection<Follower> Followers { get; set; }
 
-
+        [JsonIgnore]
         public virtual ICollection<Follower> Following { get; set; }
 
-
+        [JsonIgnore]
         public virtual ICollection<_Post> Posts { get; set; }
 
-
+        [JsonIgnore]
         public virtual ICollection<Contribution> Contributions { get; set; }
 
-
+        [JsonIgnore]
         public virtual ICollection<Contributor> PostContributed { get; set; }
 
-
+        [JsonIgnore]
         public virtual ICollection<PostLike> Likes { get; set; }
 
-
+        [JsonIgnore]
         public virtual ICollection<PostComment> Comments { get; set; }
 
 
